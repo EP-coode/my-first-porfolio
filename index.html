@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="stylesheet" href='./styles/index.css' />
   <link rel="stylesheet" href='./styles/MainView.css'/>
   <link rel="stylesheet" href='./styles/Menu.css'/>
-  <link rel="stylesheet" href='./styles/index.css' />
+  <link rel="stylesheet" href='./styles/sections.css'/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ernest Przybył</title>
 </head>
@@ -14,49 +15,52 @@
 <body>
 
   <div id="app">
+
     <menu class="menu">
       <a class="menu__banner" href='/'>
-        <img src="./assets/images/logo.png" alt='Logo' />
+        <img src="./assets/images/logo.png" alt='Logo'/>
         <span class="menu__logo-title">Ernest Przybył</span>
       </a>
       <nav class="menu__nav">
-        <a class="menu__nav-item" href='/'>
+        <button class="menu__nav-item" href='/#about-me'>
           About me
-        </a>
-        <a class="menu__nav-item" href='/'>
+        </button>
+        <button class="menu__nav-item" href='/'>
           My projects
-        </a>
-        <a class="menu__nav-item" href='/'>
+        </button>
+        <button class="menu__nav-item" href='/'>
           Contact
-        </a>
-        <a class="menu__nav-item" href='/'>
+        </button>
+        <button class="menu__nav-item" href='/'>
           Download cv
-        </a>
+        </button>
       </nav>
       <div class="menu__footer">
         <a href='https://github.com/EP-coode' target='_blank' rel="noreferrer">
           <img src="assets/images/github.svg" alt='github' />
         </a>
         <a href='https://www.linkedin.com/in/ernestprzybyl' target='_blank' rel="noreferrer">
-          <img src="assets/images/github.svg" alt='linkedin' />
+          <img src="assets/images/linkedin.svg" alt='linkedin' />
         </a>
       </div>
     </menu>
 
     <div class="main-view">
       <div class="banner">
-        <img src="/assets/images/banner.jpg" alt="banner"/>
+        <div class="banner__content">
+          <h1 class="banner__title">
+            I'm Ernest Przybył, a web developer
+          </h1>
+        </div>
       </div>
       <section class="about-me">
+        <h2>About me</h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum leo quis iaculis rhoncus. Aenean vitae dolor at
         magna imperdiet pellentesque ut sit amet arcu. Morbi risus dolor, pulvinar rhoncus rutrum sed, mattis ut quam. Morbi
         vehicula dolor in purus aliquet tincidunt. Vivamus tincidunt erat justo, id hendrerit dolor vulputate vel. Integer
-        ac interdum felis. Sed dapibus ullamcorper quam, eu auctor massa fermentum euismod. Phasellus convallis ultrices
-        diam vel tristique. Maecenas in turpis et nisl ornare facilisis. Cras cursus laoreet ullamcorper. Suspendisse
-        rhoncus ex quis lorem vehicula pulvinar. Cras ornare hendrerit sodales. Phasellus eleifend in urna et ultrices.
-        Aenean ullamcorper augue non sem sagittis tempor.
       </section>
       <section class="my-projects">
+        <h2>My projects</h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum leo quis iaculis rhoncus. Aenean vitae dolor at
         magna imperdiet pellentesque ut sit amet arcu. Morbi risus dolor, pulvinar rhoncus rutrum sed, mattis ut quam. Morbi
         vehicula dolor in purus aliquet tincidunt. Vivamus tincidunt erat justo, id hendrerit dolor vulputate vel. Integer
@@ -66,6 +70,7 @@
         Aenean ullamcorper augue non sem sagittis tempor.
       </section>
       <section class="contact">
+        <h2>Contact</h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum leo quis iaculis rhoncus. Aenean vitae dolor at
         magna imperdiet pellentesque ut sit amet arcu. Morbi risus dolor, pulvinar rhoncus rutrum sed, mattis ut quam. Morbi
         vehicula dolor in purus aliquet tincidunt. Vivamus tincidunt erat justo, id hendrerit dolor vulputate vel. Integer
@@ -76,7 +81,6 @@
       </section>
     </div>
   </div>
-
   <script type="module" src="/main.js"></script>
 </body>
 

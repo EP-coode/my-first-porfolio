@@ -6,13 +6,33 @@
 }
 
 .banner{
+    position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.banner img{
-    display: block;
+.banner::before{
+    content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-image: url(../assets/images/banner.jpg);
+    filter: brightness(0.4);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner__title{
+    user-select: none;
+    text-align: center;
+    padding: 0 2rem 15rem 2rem;
 }
