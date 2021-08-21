@@ -3,6 +3,7 @@
     margin-left: 10rem;
     min-height: 100vh;
     font-size: 2rem;
+    transition: var(--transition-spreed);
 }
 
 .banner{
@@ -34,5 +35,12 @@
 .banner__title{
     user-select: none;
     text-align: center;
-    padding: 0 2rem 15rem 2rem;
+    padding: 0 2rem 10rem 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .main-view{
+        margin-left: 0;
+        transition: var(--transition-spreed);
+    }
 }

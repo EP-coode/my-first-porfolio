@@ -9,6 +9,7 @@
     height: 100vh;
 
     background-color: var(--bg-primary);
+    transition: var(--transition-spreed);
 }
 
 .menu__banner{
@@ -25,6 +26,11 @@
     display: block;
     object-fit: cover;
     max-width: 100%;
+    
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .menu__nav{
@@ -52,10 +58,12 @@
 
     border-bottom: 0.1rem solid var(--bg-secondary);
     padding: 0.5rem 0;
+    transition: var(--transition-spreed);
 }
 
 .menu__nav-item:first-child{
     border-top: 0.1rem solid var(--bg-secondary);
+    transition: var(--transition-spreed);
 }
 
 .menu__nav-item:hover{
@@ -87,4 +95,12 @@
 
 .menu__footer img:hover{
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+    .menu{
+        visibility: hidden;
+        transition: var(--transition-spreed);
+        transform: translateX(-10rem);
+    }
 }
