@@ -12,6 +12,10 @@
     height: 100vh;
 }
 
+.banner canvas{
+    position: absolute;
+}
+
 .banner::before{
     content: "";
     position: absolute;
@@ -42,5 +46,9 @@
     .main-view{
         margin-left: 0;
         transition: var(--transition-spreed);
+    }
+
+    .banner canvas{
+        display: none;
     }
 }
