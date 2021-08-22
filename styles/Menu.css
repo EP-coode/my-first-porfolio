@@ -9,7 +9,8 @@
     height: 100vh;
 
     background-color: var(--bg-primary);
-    transition: var(--transition-spreed);
+
+
 }
 
 .menu__banner{
@@ -99,8 +100,42 @@
 
 @media screen and (max-width: 600px) {
     .menu{
-        visibility: hidden;
-        transition: var(--transition-spreed);
-        transform: translateX(-10rem);
+        /* visibility: hidden; */
+        /* transition: var(--transition-spreed); */
+        /* transform: translateX(-10rem); */
+        z-index: 98;
+        width: 100vw;
+        height: fit-content;
+        bottom: 0;
+        transition: 0;
     }
+
+    .menu__banner{
+        display: none;
+    }
+
+    .menu__nav{
+        flex-direction: row;
+        height: 4rem;
+    }
+
+    .menu__footer{
+        display: none;
+    }
+
+    .menu__nav-item{
+        border-bottom: none;
+        font-size: 1rem;
+        border-right: 0.2rem solid var(--bg-secondary);
+        height: 100%;
+        padding: 0 1rem;
+    }
+    .menu__nav-item:first-child{
+        border-top: none;
+    }
+
+    .menu__nav-item:last-child{
+        border-right: none;
+    }
+
 }
