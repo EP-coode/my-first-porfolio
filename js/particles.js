@@ -22,7 +22,7 @@ const PARTICLE_MAX_SIZE = 15
 const STARVE_RATE = 0.2
 const MOUSE_FORCE_FACTOR = -0.005
 const INITIAL_SPEED_FACTOR = 0.2
-const PARTICLES_AMMOUT = 60
+const PARTICLES_AMMOUT = 100
 // forve of enviroment applied to evry particle
 const ENV_FORCE = Object.freeze({x: 0, y: 0.0005})
 
