@@ -9,7 +9,9 @@ function isInView(el, pxOffset = 200) {
 
 function handleScrolAnimations() {
     containers.forEach(el => {
-        if (isInView(el, el.getBoundingClientRect().height/3))
+        const offset = Math.min(el.getBoundingClientRect().height / 3, 200);
+
+        if (isInView(el, offset))
             el.classList.add('scrooled-in')
     })
 }
