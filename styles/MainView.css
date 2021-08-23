@@ -4,6 +4,8 @@
     min-height: 100vh;
     font-size: 2rem;
     transition: var(--transition-spreed);
+    overflow: hidden;
+    padding-bottom: 5rem;
 }
 
 .banner{
@@ -39,10 +41,11 @@
 .banner__title{
     user-select: none;
     text-align: center;
+    text-shadow: 0.3rem 0.3rem 2px var(--bg-secondary);
     padding: 0 2rem 10rem 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .main-view{
         margin-left: 0;
         transition: var(--transition-spreed);

@@ -5,3 +5,15 @@ section{
     max-width: 65rem;
     margin: 0 auto;
 }
+
+.scrol-in{
+    opacity: 0;
+    transform: translate(50%);
+    transition: opacity  calc(3*var(--transition-spreed)),transform calc(3*var(--transition-spreed));
+}
+
+.scrooled-in{
+    opacity: 1;
+    transform: translate(0);
+    transition:  opacity  calc(3*var(--transition-spreed)),transform  calc(3*var(--transition-spreed));
+}

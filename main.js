@@ -1,6 +1,8 @@
 import './js/loader'
 import './js/menu'
 import './js/particles'
+import './js/contact'
+import './js/slide_in_animation'
 
 // alert("under construction")
 // document.querySelector('#app').innerHTML = `
