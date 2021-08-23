@@ -1,9 +1,27 @@
 section{
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
     max-width: 65rem;
     margin: 0 auto;
+}
+
+section#contact p a{
+    margin-right: 2rem;
+    color: transparent;
+}
+
+section#contact p a:active{
+    color: transparent;
+}
+
+
+section#contact p a img:hover{
+   transform: scale(1.2);
+}
+
+section p{
+    margin-top: 1rem;
 }
 
 .scrol-in{
