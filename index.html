@@ -1,148 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/MainView.css" />
+    <link rel="stylesheet" href="./styles/Menu.css" />
+    <link rel="stylesheet" href="./styles/sections.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="./styles/project_grid.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ernest Przybył</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="./favicon.png" />
-  <link rel="stylesheet" href='./styles/index.css' />
-  <link rel="stylesheet" href='./styles/MainView.css' />
-  <link rel="stylesheet" href='./styles/Menu.css' />
-  <link rel="stylesheet" href='./styles/sections.css' />
-  <link rel="stylesheet" href="./styles/loader.css" />
-  <link rel="stylesheet" href="./styles/project_grid.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ernest Przybył</title>
-</head>
+  <body>
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-<body>
-
-  <div class="loader">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <div id="app">
-
-    <menu class="menu">
-      <button class="menu__banner" id="logo-btn">
-        <img src="./assets/images/logo.png" alt='Logo' />
-        <span class="menu__logo-title">Ernest Przybył</span>
-      </button>
-      <nav class="menu__nav">
-        <button class="menu__nav-item" id="about-me-btn">
-          About me
+    <div id="app">
+      <menu class="menu">
+        <button class="menu__banner" id="logo-btn">
+          <img src="./assets/images/logo.png" alt="Logo" />
+          <span class="menu__logo-title">Ernest Przybył</span>
         </button>
-        <button class="menu__nav-item" id="my-projects-btn">
-          My projects
-        </button>
-        <button class="menu__nav-item" id='contact-btn'>
-          Contact
-        </button>
-        <button class="menu__nav-item" id="download-btn">
-          Download cv
-        </button>
-      </nav>
-      <div class="menu__footer">
-        <a href='https://github.com/EP-coode' target='_blank' rel="noreferrer">
-          <img src="assets/images/github.svg" alt='github' style="filter: invert(1);" />
-        </a>
-        <a href='https://www.linkedin.com/in/ernestprzybyl' target='_blank' rel="noreferrer">
-          <img src="assets/images/linkedin.svg" alt='linkedin' style="filter: invert(1);" />
-        </a>
-      </div>
-    </menu>
-
-    <div class="main-view">
-      <div class="banner">
-        <canvas id="banner_canvas"></canvas>
-        <div class="banner__content">
-          <h1 class="banner__title">
-            I'm Ernest Przybył, a web developer
-          </h1>
+        <nav class="menu__nav">
+          <button class="menu__nav-item" id="about-me-btn">About me</button>
+          <button class="menu__nav-item" id="my-projects-btn">
+            My projects
+          </button>
+          <button class="menu__nav-item" id="contact-btn">Contact</button>
+          <button class="menu__nav-item" id="download-btn">Download cv</button>
+        </nav>
+        <div class="menu__footer">
+          <a
+            href="https://github.com/EP-coode"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="assets/images/github.svg"
+              alt="github"
+              style="filter: invert(1)"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ernestprzybyl"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="assets/images/linkedin.svg"
+              alt="linkedin"
+              style="filter: invert(1)"
+            />
+          </a>
         </div>
-      </div>
+      </menu>
 
-      <section id="about-me">
-        <div class="scrol-in">
-          <h2>About me</h2>
-          <p lang="en">
-            Hi. I'm Full stack developer located in Poland. Currently I'm studing at the Politechnika Wrocławska (PWR)
-            at the facluty "Informatyka i zarządanie" (IT and management). Major of my studies is "Informatyka
-            stosowana"
-            (Applied Computer Science) and I'm studying since 2019.
-          </p>
-          <p lang="en">
-            I have choosen this major of studies to realize one of my passions wich is developing working sowtware.
-            Apart this I'm intrested in all sorts of elecronics. But espacialy racing drones and 3d printers.
-            I keep doing all sorts of physical activities to keep my
-            body rest after long screen sessions, but my favourite ones are long bicycle rides.
-          </p>
-          <p>
-            Currently I'm looking for to gain some practises in commercial work.
-          </p>
-        </div>
-      </section>
-
-      <section id="my-projects">
-        <div class="scrol-in">
-          <h2>My projects</h2>
-
-          <div class="project-grid">
-            
-            <div class="scrol-in">
-            <a class="project-grid__item" href="https://github.com/EP-coode/my-first-porfolio" target="_blank">
-              <div class="project-grid__item-text">
-                <h3>
-                  My portfolio
-                </h3>
-                  <ul class="project-grid__tech-list">
-                    <li class="project-grid__tech">JS</li>
-                    <li class="project-grid__tech">CSS</li>
-                    <li class="project-grid__tech">HTML</li>
-                  </ul>
-                <p>
-                  Simple static page writenn in vanilla js, without usage of any external liblary.
-                </p>
-              </div>
-              <img class="project-grid__item-img" src="./assets/images/app1.png" alt="dog placeholder"/>
-            </a>
-            </div>
-
-            <a class="project-grid__item">
-              <div class="project-grid__item-text">
-                <h3>
-                  Sad placeholder
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis provident nesciunt, a pariatur corporis. Porro sequi nam nulla beatae voluptatibus odio deserunt, esse a inventore, sed voluptates soluta sint.
-                </p>
-              </div>
-              <img class="project-grid__item-img" src="./assets/images/boxer-placeholder.jpg" alt="dog placeholder" />
-            </a>
+      <div class="main-view">
+        <div class="banner">
+          <canvas id="banner_canvas"></canvas>
+          <div class="banner__content">
+            <h1 class="banner__title">I'm Ernest Przybył, a web developer</h1>
           </div>
         </div>
-      </section>
 
-      <section id="contact">
-        <div class="scrol-in">
-          <h2>Contact</h2>
-          <p>Wrocław/Kalisz, Poland</p>
-          <p style="user-select: all;">ernestprzybyl@gmail.com</p>
-          <p>
-            <a href='https://github.com/EP-coode' target='_blank' rel="noreferrer">
-              <img src="assets/images/github.svg" alt='github' style="filter: invert(1);" />
-            </a>
-            <a href='https://www.linkedin.com/in/ernestprzybyl' target='_blank' rel="noreferrer">
-              <img src="assets/images/linkedin.svg" alt='linkedin' style="filter: invert(1);" />
-            </a>
-          </p>
-        </div>
-      </section>
+        <section id="about-me">
+          <div class="scrol-in">
+            <h2>About me</h2>
+            <p lang="en">
+              Hi. I'm Full stack developer located in Poland. Currently I'm
+              studing at the Politechnika Wrocławska (PWR) at the facluty
+              "Informatyka i zarządanie" (IT and management). Major of my
+              studies is "Informatyka stosowana" (Applied Computer Science) and
+              I'm studying since 2019.
+            </p>
+            <p lang="en">
+              I have choosen this major of studies to realize one of my passions
+              wich is developing working sowtware. Apart this I'm intrested in
+              all sorts of elecronics. But espacialy racing drones and 3d
+              printers. I keep doing all sorts of physical activities to keep my
+              body rest after long screen sessions, but my favourite ones are
+              long bicycle rides.
+            </p>
+            <p>
+              Currently I'm looking for to gain some practises in commercial
+              work.
+            </p>
+          </div>
+        </section>
 
+        <section id="my-projects">
+          <div class="scrol-in">
+            <h2>My projects</h2>
+
+            <div class="project-grid">
+              <div class="scrol-in">
+                <a
+                  class="project-grid__item"
+                  href="https://github.com/EP-coode/my-first-porfolio"
+                  target="_blank"
+                >
+                  <div class="project-grid__item-text">
+                    <h3>My portfolio</h3>
+                    <ul class="project-grid__tech-list">
+                      <li class="project-grid__tech">JS</li>
+                      <li class="project-grid__tech">CSS</li>
+                      <li class="project-grid__tech">HTML</li>
+                    </ul>
+                    <p>
+                      Simple static page writenn in vanilla js, without usage of
+                      any external liblary.
+                    </p>
+                  </div>
+                  <img
+                    class="project-grid__item-img"
+                    src="./assets/images/app1.png"
+                    alt="dog placeholder"
+                  />
+                </a>
+              </div>
+
+              <a
+                class="project-grid__item"
+                href="https://github.com/EP-coode/AplikacjeMultimedialne"
+                target="_blank"
+              >
+                <div class="project-grid__item-text">
+                  <h3>Space Explorer</h3>
+                  <ul class="project-grid__tech-list">
+                    <li class="project-grid__tech">React</li>
+                    <li class="project-grid__tech">TS</li>
+                    <li class="project-grid__tech">Redux</li>
+                    <li class="project-grid__tech">MateriaUI</li>
+                    <li class="project-grid__tech">Dixie.js</li>
+                  </ul>
+                  <p>
+                    Simle project made to train react and other liblaries. It
+                    allows user to browse space news, save favourite ones and
+                    many other... Click and visit github for more.
+                  </p>
+                </div>
+                <img
+                  class="project-grid__item-img"
+                  src="./assets/images/space_explorer.PNG"
+                  alt="dog placeholder"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="scrol-in">
+            <h2>Contact</h2>
+            <p>Wrocław/Kalisz, Poland</p>
+            <p style="user-select: all">ernestprzybyl@gmail.com</p>
+            <p>
+              <a
+                href="https://github.com/EP-coode"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="assets/images/github.svg"
+                  alt="github"
+                  style="filter: invert(1)"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ernestprzybyl"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="assets/images/linkedin.svg"
+                  alt="linkedin"
+                  style="filter: invert(1)"
+                />
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
